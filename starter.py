@@ -1,8 +1,6 @@
 from Decorators.task import task
 import os, sys
 
-sys.path.insert(0, os.getcwd())
-
 from Classes.ticket_messages import Ticket_Messages
 
 BOTTICKETS_DESCRIPTION = 'A bot that manages user tickets'

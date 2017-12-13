@@ -4,7 +4,7 @@ from Decorators.command import command
 def cleartickets(self, message, ctx):
     """Finds which ticket type needs to be cleared, then runs a function to clear it"""
 
-    ticket_name = ctx.message_content[0]
+    ticket_name = ctx.message_content['ticket type']
 
     if ticket_name not in self.tickets:
         self.message_printer(self.ticket_messages.bad_ticket_type.format(ticket_name), message.channel)
